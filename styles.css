@@ -1,0 +1,111 @@
+.App-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logout-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.user-info:hover .logout-dropdown {
+    display: block;
+}
+
+.logout-dropdown button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.logout-dropdown button:hover {
+    background-color: #f5f5f5;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.invoices-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.invoices-table, .invoice-lines-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.invoices-table th, .invoices-table td, .invoice-lines-table th, .invoice-lines-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.invoices-table th, .invoice-lines-table th {
+    background-color: #f5f5f5;
+}
